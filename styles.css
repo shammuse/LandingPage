@@ -1,0 +1,76 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and sections styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  height: 100vh;
+  padding: 20px;
+}
+
+#home {
+  background: lightblue;
+}
+
+#about {
+  background: lightcoral;
+}
+
+#services {
+  background: lightgreen;
+}
+
+#contact {
+  background: lightgoldenrodyellow;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #007BFF, #0056b3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background 0.3s, padding 0.3s;
+}
+
+.navbar.scrolled {
+  background: linear-gradient(to right, #0056b3, #002d63);
+  padding: 10px 0;
+}
+
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul.menu li {
+  margin: 0 15px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+  color: #ffc107;
+}
+
+/* Sticky effect for scrolled state */
+.navbar.scrolled a {
+  font-size: 16px;
+}
